@@ -3,11 +3,11 @@ import React from 'react';
 import MainForm from './MainForm';
 import MainSummary from './MainSummary';
 
-export default function MainPage(props) {
+export default function MainPage({ selected, updateFeature }) {
   return (
     <main>
-      <MainForm selected={props.selected} updateFeature={props.updateFeature}/>
-      <MainSummary selected={props.selected} />
+      <MainForm selected={selected} updateFeature={updateFeature} />
+      <MainSummary selected={selected} />
     </main>
-  )
+  );
 }

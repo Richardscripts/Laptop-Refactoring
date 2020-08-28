@@ -9,36 +9,37 @@ class App extends Component {
     selected: {
       Processor: {
         name: '17th Generation Intel Core HB (7 Core with donut spare)',
-        cost: 700
+        cost: 700,
       },
       'Operating System': {
         name: 'Ubuntu Linux 16.04',
-        cost: 200
+        cost: 200,
       },
       'Video Card': {
         name: 'Toyota Corolla 1.5v',
-        cost: 1150.98
+        cost: 1150.98,
       },
       Display: {
         name: '15.6" UHD (3840 x 2160) 60Hz Bright Lights and Knobs',
-        cost: 1500
-      }
-    }
+        cost: 1500,
+      },
+    },
   };
 
   updateFeature = (feature, newValue) => {
     const selected = Object.assign({}, this.state.selected);
     selected[feature] = newValue;
     this.setState({
-      selected
+      selected,
     });
   };
 
   render() {
+    const { selected } = this.state;
     return (
       <div className="App">
-       <Header />
-       <MainPage selected={this.state.selected} updateFeature={this.updateFeature}/>
+        <Header />
+        <MainPage selected={selected} updateFeature={this.updateFeature} />
       </div>
     );
   }

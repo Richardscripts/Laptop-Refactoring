@@ -1,9 +1,9 @@
 import React from 'react';
 import USCurrencyFormat from './currencyFormat';
 
-export default function SummaryTotal(props) {
-  const total = Object.keys(props.selected).reduce(
-    (acc, curr) => acc + props.selected[curr].cost,
+export default function SummaryTotal({ selected }) {
+  const total = Object.keys(selected).reduce(
+    (acc, curr) => acc + selected[curr].cost,
     0
   );
   return (
@@ -13,5 +13,5 @@ export default function SummaryTotal(props) {
         {USCurrencyFormat.format(total)}
       </div>
     </div>
-  )
+  );
 }

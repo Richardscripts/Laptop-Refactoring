@@ -2,10 +2,10 @@ import React from 'react';
 import SummaryTotal from './SummaryTotal';
 import USCurrencyFormat from './currencyFormat';
 
-export default function MainSummary(props){
-  const summary = Object.keys(props.selected).map((feature, idx) => {
+export default function MainSummary({ selected }) {
+  const summary = Object.keys(selected).map((feature, idx) => {
     const featureHash = feature + '-' + idx;
-    const selectedOption = props.selected[feature];
+    const selectedOption = selected[feature];
 
     return (
       <div className="summary__option" key={featureHash}>
@@ -18,12 +18,11 @@ export default function MainSummary(props){
     );
   });
 
- 
   return (
     <section className="main__summary">
       <h2>Your cart</h2>
       {summary}
-      <SummaryTotal selected={props.selected}/>
+      <SummaryTotal selected={selected} />
     </section>
-        )
+  );
 }

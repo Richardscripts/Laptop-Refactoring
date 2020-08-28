@@ -1,6 +1,6 @@
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
   style: 'currency',
-  currency: 'USD'
+  currency: 'USD',
 });
 
 export default USCurrencyFormat;
