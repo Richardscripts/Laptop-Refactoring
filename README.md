@@ -1,3 +1,5 @@
+Live link: https://richardscripts.github.io/Laptop-Refactoring/
+
 # Laptop Customizer
 _Starter project for React course_
 
