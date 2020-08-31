@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff67e8b87883a1663a661e5c98b9902d",
+    "revision": "7feef07fabd9e129faee98ca23e45ba9",
     "url": "/Laptop-Refactoring/index.html"
   },
   {
-    "revision": "5cccc1e37dc091f9a22a",
+    "revision": "7a0d0e5be3818cae0331",
     "url": "/Laptop-Refactoring/static/css/main.72a41afd.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Laptop-Refactoring/static/js/2.a3f18fbf.chunk.js"
   },
   {
-    "revision": "5cccc1e37dc091f9a22a",
-    "url": "/Laptop-Refactoring/static/js/main.4fd5683e.chunk.js"
+    "revision": "7a0d0e5be3818cae0331",
+    "url": "/Laptop-Refactoring/static/js/main.00c691b6.chunk.js"
   },
   {
     "revision": "031e4b636d57dea1e0a5",
