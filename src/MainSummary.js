@@ -1,6 +1,6 @@
 import React from 'react';
 import SummaryTotal from './SummaryTotal';
-import USCurrencyFormat from './currencyFormat';
+import SummaryOptions from './SummaryOptions';
 
 export default function MainSummary({ selected }) {
   const summary = Object.keys(selected).map((feature, idx) => {
@@ -8,16 +8,14 @@ export default function MainSummary({ selected }) {
     const selectedOption = selected[feature];
 
     return (
-      <div className="summary__option" key={featureHash}>
-        <div className="summary__option__label">{feature} </div>
-        <div className="summary__option__value">{selectedOption.name}</div>
-        <div className="summary__option__cost">
-          {USCurrencyFormat.format(selectedOption.cost)}
-        </div>
-      </div>
+      <SummaryOptions
+        key={idx}
+        featureHash={featureHash}
+        feature={feature}
+        selectedOption={selectedOption}
+      />
     );
   });
-
   return (
     <section className="main__summary">
       <h2>Your cart</h2>
